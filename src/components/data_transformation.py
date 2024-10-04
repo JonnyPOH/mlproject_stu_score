@@ -12,7 +12,6 @@ from src.exception import CustomException
 from src.logger import logging
 
 import os
-
 from src.utils import save_object
 
 @dataclass
@@ -59,13 +58,14 @@ class DataTransformation:
         try:
             train_df=pd.read_csv(train_path)
             test_df=pd.read_csv(test_path)
+            print(train_df.head(), test_df.head())
 
             logging.info("Read train and test done ... obtaining preproc")
             logging.info(f"Applying preprocessor to train and test data")
 
             preprocessing_obj=self.get_transformer_object()
             target_column_name='NIGHTS'
-            numerical_columns = ['AGE', 'INCOME']
+
 
             input_feature_train_df=train_df.drop(columns=[target_column_name],axis=1)
             target_feature_train_df=train_df[target_column_name]
@@ -101,8 +101,6 @@ class DataTransformation:
                 test_arr,
                 self.data_transformation_config.preprocessor_ob_file_path
             )
-
-
 
         except Exception as e:
             raise CustomException(e,sys)

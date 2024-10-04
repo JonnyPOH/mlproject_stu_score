@@ -14,7 +14,6 @@ CLIENT_KEY,AGE,GENDER,VETERAN,INCOME,NIGHTS,substanceabuse,completed,probation,a
 203539,24,Female,No,1034.32,182,1,0,1,tempassistance,1
 104493,25,Female,No,500,154,1,1,0,tempassistance,1
 280713,25,Male,No,674,179,0,1,1,tempassistance,1
-323053,25,Female,No,0,NA,0,0,1,tempassistance,1
 289625,25,Female,No,2108.32,275,0,1,1,tempassistance,1
 263197,26,Female,No,1514,192,1,0,1,tempassistance,1
 289150,27,Female,No,0,270,1,0,1,tempassistance,1
@@ -28,7 +27,6 @@ CLIENT_KEY,AGE,GENDER,VETERAN,INCOME,NIGHTS,substanceabuse,completed,probation,a
 227152,30,Female,No,150,92,0,1,0,tempassistance,0
 219786,30,Male,No,0,98,1,1,1,tempassistance,0
 104191,30,Female,No,0,103,0,0,0,tempassistance,1
-117910,30,Female,No,0,NA,0,1,0,tempassistance,1
 291410,30,Female,No,690,137,1,1,1,tempassistance,1
 262445,30,Female,No,328,401,1,1,0,tempassistance,1
 230886,31,Female,No,861.22,92,0,1,1,tempassistance,1
@@ -78,7 +76,6 @@ CLIENT_KEY,AGE,GENDER,VETERAN,INCOME,NIGHTS,substanceabuse,completed,probation,a
 292075,43,Male,Yes,1001,54,0,1,0,tempassistance,1
 112790,44,Female,No,0,59,0,1,0,tempassistance,1
 229530,44,Female,No,0,90,0,0,1,tempassistance,1
-301284,45,Female,No,445.57,NA,0,1,0,tempassistance,1
 309574,45,Female,No,674,59,0,1,0,tempassistance,1
 280883,45,Female,No,0,63,0,1,0,tempassistance,1
 250833,46,Female,No,1297,80,0,0,0,tempassistance,1
@@ -135,7 +132,6 @@ CLIENT_KEY,AGE,GENDER,VETERAN,INCOME,NIGHTS,substanceabuse,completed,probation,a
 203539,24,Female,No,1034.32,182,1,0,1,permassistance,1
 104493,25,Female,No,500,154,1,1,0,permassistance,1
 280713,25,Male,No,674,179,0,1,1,permassistance,1
-323053,25,Female,No,0,NA,0,0,1,permassistance,1
 289625,25,Female,No,2108.32,275,0,1,1,permassistance,0
 263197,26,Female,No,1514,192,1,0,1,permassistance,0
 289150,27,Female,No,0,270,1,0,1,permassistance,1
@@ -149,7 +145,6 @@ CLIENT_KEY,AGE,GENDER,VETERAN,INCOME,NIGHTS,substanceabuse,completed,probation,a
 227152,30,Female,No,150,92,0,1,0,permassistance,0
 219786,30,Male,No,0,98,1,1,1,permassistance,0
 104191,30,Female,No,0,103,0,0,0,permassistance,1
-117910,30,Female,No,0,NA,0,1,0,permassistance,1
 291410,30,Female,No,690,137,1,1,1,permassistance,1
 262445,30,Female,No,328,401,1,1,0,permassistance,1
 230886,31,Female,No,861.22,92,0,1,1,permassistance,0
@@ -199,7 +194,6 @@ CLIENT_KEY,AGE,GENDER,VETERAN,INCOME,NIGHTS,substanceabuse,completed,probation,a
 292075,43,Male,Yes,1001,54,0,1,0,permassistance,1
 112790,44,Female,No,0,59,0,1,0,permassistance,1
 229530,44,Female,No,0,90,0,0,1,permassistance,0
-301284,45,Female,No,445.57,NA,0,1,0,permassistance,0
 309574,45,Female,No,674,59,0,1,0,permassistance,0
 280883,45,Female,No,0,63,0,1,0,permassistance,0
 250833,46,Female,No,1297,80,0,0,0,permassistance,0
