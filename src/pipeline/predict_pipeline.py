@@ -9,8 +9,8 @@ class PredictPipeline:
 
     def predict(self, features):
         try:
-            model_path='artifacts\model.pkl'
-            preprocessor_path='artifacts\preprocessor.pkl'
+            model_path='artifacts/model.pkl'
+            preprocessor_path='artifacts/preprocessor.pkl'
             model=load_object(file_path=model_path)
             preprocessor=load_object(file_path=preprocessor_path)
             data_scaled=preprocessor.transform(features)
@@ -19,34 +19,35 @@ class PredictPipeline:
         except Exception as e:
             raise CustomException(e,sys)
 
+# AGE, GENDER, VETERAN, INCOME, NIGHTS, substanceabuse, completed, probation
 class CustomData:
     def __init__(self,
         gender:str,
-        race_ethnicity: int,
-        parental_level_of_education,
-        lunch:str,
-        test_preparation_course:str,
-        reading_score:int,
-        writing_score:int):
+        age: int,
+        substanceabuse: bool,
+        veteran:bool,
+        probation:bool,
+        completed:bool,
+        income:int):
 
         self.gender=gender
-        self.race_ethnicity=race_ethnicity
-        self.parental_level_of_education=parental_level_of_education
-        self.lunch=lunch
-        self.test_preperation_couse=test_preparation_course
-        self.reading_score=reading_score
-        self.writing_score=writing_score
+        self.age=age
+        self.substanceabuse=substanceabuse
+        self.veteran=veteran
+        self.completed=completed
+        self.probation=probation
+        self.income=income
 
     def get_data_as_data_frame(self):
         try:
             custom_data_input_dict = {
-                "gender": [self.gender],
-                "race_ethnicity": [self.race_ethnicity],
-                "parental_level_of_education": [self.parental_level_of_education],
-                "lunch": [self.lunch],
-                "test_preparation_course": [self.test_preparation_course],
-                "reading_score": [self.readhing_score],
-                "writing_score": [self.writing_score]
+                "GENDER": [self.gender],
+                "AGE": [self.age],
+                "substanceabuse": [self.substanceabuse],
+                "VETERAN": [self.veteran],
+                "probation": [self.probation],
+                "completed": [self.completed],
+                "INCOME": [self.income]
             }
             return pd.DataFrame(custom_data_input_dict)
 
